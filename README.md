@@ -1,6 +1,6 @@
-# ![](./imgs/kyivstar_bds_logo.png) [Kyivstar-BigDataSchool5.0](https://bigdata.kyivstar.ua/school/)
+# [Kyivstar-BigDataSchool5.0](https://bigdata.kyivstar.ua/school/)
 
-![](./imgs/graduatecap_small.png)
+![](./imgs/kyivstar_bds_logo.png)
 
 * СУБОТА, 24 ЖОВТНЯ
 > 12:00–13:00 Андрій Желєзняк, Олег Волошко, Ірина Віткова
