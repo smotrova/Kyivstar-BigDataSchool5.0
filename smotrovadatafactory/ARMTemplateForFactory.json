@@ -10,6 +10,10 @@
 		"smotrovakeyvault_properties_typeProperties_baseUrl": {
 			"type": "string",
 			"defaultValue": "https://smotrova-key-vault.vault.azure.net/"
+		},
+		"ls_smotrovablobstorage_properties_typeProperties_connectionString_secretName": {
+			"type": "string",
+			"defaultValue": "blob"
 		}
 	},
 	"variables": {
@@ -28,6 +32,28 @@
 				}
 			},
 			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/ls_smotrovablobstorage')]",
+			"type": "Microsoft.DataFactory/factories/linkedServices",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"annotations": [],
+				"type": "AzureBlobStorage",
+				"typeProperties": {
+					"connectionString": {
+						"type": "AzureKeyVaultSecret",
+						"store": {
+							"referenceName": "smotrovakeyvault",
+							"type": "LinkedServiceReference"
+						},
+						"secretName": "[parameters('ls_smotrovablobstorage_properties_typeProperties_connectionString_secretName')]"
+					}
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/linkedServices/smotrovakeyvault')]"
+			]
 		}
 	]
 }

@@ -11,6 +11,10 @@
 			"type": "string",
 			"defaultValue": "https://smotrova-key-vault.vault.azure.net/"
 		},
+		"ls_smotrovablobstorage_properties_typeProperties_connectionString_secretName": {
+			"type": "string",
+			"defaultValue": "blob"
+		},
 		"containerUri": {
 			"type": "string",
 			"metadata": "URI to storage account containing linked ARM templates"
@@ -40,6 +44,9 @@
 					},
 					"smotrovakeyvault_properties_typeProperties_baseUrl": {
 						"value": "[parameters('smotrovakeyvault_properties_typeProperties_baseUrl')]"
+					},
+					"ls_smotrovablobstorage_properties_typeProperties_connectionString_secretName": {
+						"value": "[parameters('ls_smotrovablobstorage_properties_typeProperties_connectionString_secretName')]"
 					}
 				}
 			},
