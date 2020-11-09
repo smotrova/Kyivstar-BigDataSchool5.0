@@ -1,0 +1,17 @@
+{
+	"name": "ls_smotrovablobstorage",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobStorage",
+		"typeProperties": {
+			"connectionString": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "smotrovakeyvault",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "blob"
+			}
+		}
+	}
+}
