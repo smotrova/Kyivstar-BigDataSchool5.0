@@ -7,9 +7,9 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "smotrovadatafactory"
 		},
-		"ls_keyvault01_properties_typeProperties_baseUrl": {
+		"smotrovakeyvault_properties_typeProperties_baseUrl": {
 			"type": "string",
-			"defaultValue": "https://smotrovakeyvault.vault.azure.net/"
+			"defaultValue": "https://smotrova-key-vault.vault.azure.net/"
 		},
 		"containerUri": {
 			"type": "string",
@@ -38,8 +38,8 @@
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
 					},
-					"ls_keyvault01_properties_typeProperties_baseUrl": {
-						"value": "[parameters('ls_keyvault01_properties_typeProperties_baseUrl')]"
+					"smotrovakeyvault_properties_typeProperties_baseUrl": {
+						"value": "[parameters('smotrovakeyvault_properties_typeProperties_baseUrl')]"
 					}
 				}
 			},

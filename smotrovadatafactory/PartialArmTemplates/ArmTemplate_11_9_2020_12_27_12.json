@@ -6,10 +6,6 @@
 			"type": "string",
 			"metadata": "Data Factory name",
 			"defaultValue": "smotrovadatafactory"
-		},
-		"smotrovakeyvault_properties_typeProperties_baseUrl": {
-			"type": "string",
-			"defaultValue": "https://smotrova-key-vault.vault.azure.net/"
 		}
 	},
 	"variables": {
@@ -24,7 +20,7 @@
 				"annotations": [],
 				"type": "AzureKeyVault",
 				"typeProperties": {
-					"baseUrl": "[parameters('smotrovakeyvault_properties_typeProperties_baseUrl')]"
+					"baseUrl": "https://smotrova-key-vault.vault.azure.net/"
 				}
 			},
 			"dependsOn": []

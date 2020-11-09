@@ -7,9 +7,9 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "smotrovadatafactory"
 		},
-		"ls_keyvault01_properties_typeProperties_baseUrl": {
+		"smotrovakeyvault_properties_typeProperties_baseUrl": {
 			"type": "string",
-			"defaultValue": "https://smotrovakeyvault.vault.azure.net/"
+			"defaultValue": "https://smotrova-key-vault.vault.azure.net/"
 		}
 	},
 	"variables": {
@@ -17,14 +17,14 @@
 	},
 	"resources": [
 		{
-			"name": "[concat(parameters('factoryName'), '/ls_keyvault01')]",
+			"name": "[concat(parameters('factoryName'), '/smotrovakeyvault')]",
 			"type": "Microsoft.DataFactory/factories/linkedServices",
 			"apiVersion": "2018-06-01",
 			"properties": {
 				"annotations": [],
 				"type": "AzureKeyVault",
 				"typeProperties": {
-					"baseUrl": "[parameters('ls_keyvault01_properties_typeProperties_baseUrl')]"
+					"baseUrl": "[parameters('smotrovakeyvault_properties_typeProperties_baseUrl')]"
 				}
 			},
 			"dependsOn": []

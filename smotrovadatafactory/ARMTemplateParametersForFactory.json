@@ -4,6 +4,9 @@
 	"parameters": {
 		"factoryName": {
 			"value": "smotrovadatafactory"
+		},
+		"smotrovakeyvault_properties_typeProperties_baseUrl": {
+			"value": "https://smotrova-key-vault.vault.azure.net/"
 		}
 	}
 }
